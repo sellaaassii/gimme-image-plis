@@ -1,22 +1,16 @@
-{
+ {
   "name": "gimme-image-plis",
   "version": "1.0.0",
   "description": "This should serve as aa simple image repository",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sellaaassii/gimme-image-plis.git"
+    "start": "yarn && nodemon index.js",
+    "clean": "rm -rf node_modules yarn.lock && yarn cache clean"
   },
   "author": "Skuds",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sellaaassii/gimme-image-plis/issues"
-  },
-  "homepage": "https://github.com/sellaaassii/gimme-image-plis#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -33,6 +27,7 @@
     "validator": "^13.5.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "concurrently": "^4.0.1"
   }
 }

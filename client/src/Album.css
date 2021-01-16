@@ -1,0 +1,31 @@
+.album {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 8px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 7%;
+
+  @include bp( small ) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp( large ) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include bp( x-small ) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  img {
+    width: 100%;
+    border: 5px solid #fff;
+  }
+}
+
+.album-title {
+  margin-bottom: 5%;
+  font-size: 60px;
+}

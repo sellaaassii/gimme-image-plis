@@ -22,6 +22,10 @@ app.use("/api/photo", photoRoutes);
 
 startDBConnection();
 
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to shopstagram friend!" });
+});
+
 app.listen(PORT, (req, res) => {
   console.log(`Server's up on port ${PORT}`);
 });

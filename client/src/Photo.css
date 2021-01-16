@@ -1,0 +1,82 @@
+/* img {
+  height: 20%;
+  width: 20%;
+  display: inline;
+} */
+
+.photoOutline {
+  padding-bottom: 0px;
+  margin-top: 15px;
+  border-style: solid;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-section {
+  padding-bottom: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.text-section button {
+  text-align: center;
+}
+
+.deleteButton {
+  width: 100%;
+  display: block;
+   margin: 10px 0;
+   padding: 10px;
+}
+
+.uploaded-image {
+  object-fit: contain;
+   width: 200px;
+   height: 200px;
+   margin-top: 10px;
+}
+
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.filename {
+  color: blue;
+}
+
+.caption-title {
+  color: green;
+}
+
+.filename-bold {
+  font-weight: bold;
+}
+
+.caption-title-bold {
+  font-weight: bold;
+}
