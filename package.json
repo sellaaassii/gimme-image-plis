@@ -1,0 +1,35 @@
+ {
+  "name": "gimme-image-plis",
+  "version": "1.0.0",
+  "description": "This should serve as aa simple image repository",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn && yarn start",
+    "server": "cd server && yarn start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn && concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "clean-server": "cd server && yarn clean",
+    "clean-client": "cd client && yarn clean",
+    "clean-root": "rm -rf node_modules && yarn cache clean",
+    "clean": "concurrently \"yarn clean-server\" \"yarn clean-client\" \"yarn clean-root\"",
+    "start": "cd server && yarn start",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sellaaassii/gimme-image-plis.git"
+  },
+  "author": "Skuds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sellaaassii/gimme-image-plis/issues"
+  },
+  "homepage": "https://github.com/sellaaassii/gimme-image-plis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "concurrently": "^4.0.1"
+  }
+}
