@@ -6,8 +6,8 @@
   "scripts": {
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn && nodemon index.js",
-    "clean": "rm -rf node_modules yarn.lock && yarn cache clean"
+    "start": "yarn && node index.js",
+    "clean": "rm -rf node_modules && yarn cache clean"
   },
   "author": "Skuds",
   "license": "ISC",

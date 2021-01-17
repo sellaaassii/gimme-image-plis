@@ -12,7 +12,7 @@ const startDBConnection = async () => {
     const connection = mongoose.connection;
 
     connection.once("open", function() {
-      console.log("Connection to MongoDB databse was started successfully!");
+      console.log("Connection to MongoDB database was started successfully!");
     });
 
   } catch (error) {
